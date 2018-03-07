@@ -1,4 +1,6 @@
 
+import {highlightPage} from '.\\global.js';
+
 function change3rdmg()
 {
 	var sections=document.getElementsByTagName("section");

@@ -1,5 +1,7 @@
 
 
+import {highlightPage} from '.\\global.js';
+
 function showprocont()
 {
 	var main=document.getElementById("main");

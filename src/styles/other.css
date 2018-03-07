@@ -60,6 +60,7 @@ header nav li a
 }
 body #mainwrap
 {
+	min-width: 700px;
 	padding-bottom: 20px;
 }
 body #main
@@ -78,7 +79,8 @@ h1
 }
 body div #colA
 {
-	width: 70%;
+	width: 400px;
+	
     float: left;
     display: block;
 }
@@ -86,6 +88,7 @@ body div #colB
 {
 	width: 30%;
     float: left;
+ 	margin-left: 130px;
     display: block;
 }
 .clear

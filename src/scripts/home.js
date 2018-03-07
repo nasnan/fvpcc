@@ -1,11 +1,13 @@
 
+import {highlightPage} from '.\\global.js';
+
 
 function imagelist()
 {
 	var box=document.getElementById("imageBox");
 	var imglist=box.getElementsByTagName("imageList")[0];
 	var img=box.getElementsByTagName("img");
-	var timer=playTimer=null;
+	var timer,playTimer;
 	var index=0;
 	var temp=[];
 	var bnotlast=true;
@@ -49,7 +51,7 @@ function imagelist()
 			countBtn[i].className="";
 		}
 		countBtn[index].className="current";
-		moveElement("imagelist",0,(-index*imghight),5)
+		moveElement("imagelist",0,(-index*imghight),5);
 	}
 
 	//找出下一个
@@ -83,7 +85,7 @@ function imagelist()
 }
 
 
-function moveElement(moveId,final_x,final_y,interval)
+window.moveElement= function (moveId,final_x,final_y,interval)
 {
 
 	if(!document.getElementById) return false;
@@ -126,8 +128,8 @@ function moveElement(moveId,final_x,final_y,interval)
 	var repeat="moveElement('"+moveId+"',"+final_x+","
 	+final_y+","+interval+")";
 	elem.movement=setTimeout(repeat,interval);
-
 }
+
 
 
 

@@ -1,4 +1,10 @@
- function highlightPage()
+import '..\\..\\src\\styles\\other.css';
+import '..\\..\\src\\styles\\color.css';
+
+
+
+
+var highlightPage= function ()
 {
 	if(!document.getElementsByTagName) return false;
 	if(!document.getElementsByTagName("header")) return false;
@@ -17,7 +23,8 @@
 	}
 }
 
-window.onload=function()
-{
-	highlightPage();
-}
+
+export{highlightPage};
+
+
+window.onload=highlightPage;
